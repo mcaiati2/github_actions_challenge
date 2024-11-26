@@ -21,7 +21,7 @@ jobs:
       - name: Run builds
         run: cd server && npm run build && cd client && npm run build
       - name: Run tests
-        run: npm test
+        run: npm test-component
   merge:
     runs-on: ubuntu-latest
     needs: tests
